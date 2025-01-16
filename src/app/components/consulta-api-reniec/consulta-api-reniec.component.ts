@@ -13,7 +13,7 @@ export class ConsultaApiReniecComponent {
     console.log("consultando")
     console.log("DNI", this.dniBuscar)
 
-    fetch("https://apiperu.dev/api/dni/"+this.dniBuscar+"?api_token=09c59eec4dbb1c5e94d5575dffae6f30c2c42ce2924831deba8fc788b4b35c33")
+    fetch("https://apiperu.dev/api/dni/"+this.dniBuscar+"?api_token=c28475ef43107778bc1da44d90c9aed6afc0565e12f704e0f612a9e972f7c23f")
     .then((datos)=>datos.json())
     .then((datos)=>{
         console.log(datos)
