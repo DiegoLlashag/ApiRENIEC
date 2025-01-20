@@ -4,6 +4,6 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataService {
-  nombreUsuario: string = 'Validación de dni con API de RENIEC'
+  nombreUsuario: string = 'Validación de DNI con API-RENIEC.'
   constructor() { }
 }

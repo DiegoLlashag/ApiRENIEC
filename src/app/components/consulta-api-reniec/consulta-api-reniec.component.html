@@ -1,4 +1,4 @@
-
+<!-- 
 <body>
     <section>
         <h1>
@@ -47,6 +47,39 @@
             </div>
         </div>
     </section>
-    <!-- <script src="js/Main.js" type="text/javascript">
-    </script> -->
+</body> -->
+<ngx-spinner>
+    <P class="loading" style="color:white; margin-top: 6.5rem">Cargando...</P>
+</ngx-spinner>
+<body>
+    <header>
+        <h1>Consulta API RENIEC</h1>
+    </header>
+    <div class="container">
+        <form (submit)="consultarDni($event)">
+            <label for="dni">Ingrese DNI:</label>
+            <input type="text" id="dni" name="dni" [(ngModel)]="dni" placeholder="Ingrese el número de DNI">
+            <button type="submit">Consultar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>DNI</th>
+                    <!-- <th>Fecha de Nacimiento</th> -->
+                    <th (click)="mostrarMensaje()">CUI<i style="float: right;"class="fas fa-info-circle"></i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ resultados.nombre }}</td>
+                    <td>{{ resultados.apellido }}</td>
+                    <td>{{ resultados.dni }}</td>
+                    <!-- <td>{{ resultados.fechaNacimiento }}</td> -->
+                    <td>{{ resultados.cui }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
