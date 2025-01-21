@@ -38,7 +38,7 @@ consultarDni(event: Event) {
   this.spinner.show();
   event.preventDefault();
   if (this.dni) {
-    this.http.get("https://apiperu.dev/api/dni/"+this.dni+"?api_token=c28475ef43107778bc1da44d90c9aed6afc0565e12f704e0f612a9e972f7c23f").subscribe(
+    this.http.get("https://apiperu.dev/api/dni/"+this.dni+"?api_token=25d5765609adcc6ba4e9b9b400a063b3d124ac1f79065e5b58b00c3c0ac3f4fb").subscribe(
       (data: any) => {
         this.spinner.hide();
         if(data.success) {
